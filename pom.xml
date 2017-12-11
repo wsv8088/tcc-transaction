@@ -14,7 +14,9 @@
     </modules>
 
     <properties>
-
+        <hession.version>4.0.38</hession.version>
+        <log4j2.version>2.10.0</log4j2.version>
+        <lombok.version>1.16.18</lombok.version>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
@@ -23,7 +25,34 @@
 
 
     <dependencyManagement>
+        <dependencies>
 
+            <dependency>
+                <groupId>com.caucho</groupId>
+                <artifactId>hessian</artifactId>
+                <version>${hession.version}</version>
+                <optional>true</optional>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-core</artifactId>
+                <version>${log4j2.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-api</artifactId>
+                <version>${log4j2.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+
+
+        </dependencies>
 
     </dependencyManagement>
 
