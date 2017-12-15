@@ -1,4 +1,4 @@
-package com.wsun.tcc.core.enums;
+package com.wsun.tcc.common.enums;
 
 /**
  * Created by changming.xie on 1/18/17.

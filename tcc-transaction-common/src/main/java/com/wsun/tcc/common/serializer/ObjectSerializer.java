@@ -15,9 +15,9 @@
  * along with this distribution; if not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.wsun.tcc.core.serializer;
+package com.wsun.tcc.common.serializer;
 
-import com.wsun.tcc.core.exception.TccException;
+import com.wsun.tcc.common.exception.TccException;
 
 
 /**

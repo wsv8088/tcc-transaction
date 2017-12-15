@@ -15,12 +15,12 @@
  * along with this distribution; if not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.wsun.tcc.core.serializer;
+package com.wsun.tcc.common.serializer;
 
 import com.caucho.hessian.io.Hessian2Input;
 import com.caucho.hessian.io.Hessian2Output;
-import com.wsun.tcc.core.enums.Serialization;
-import com.wsun.tcc.core.exception.TccException;
+import com.wsun.tcc.common.enums.Serialization;
+import com.wsun.tcc.common.exception.TccException;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

@@ -15,10 +15,10 @@
  * along with this distribution; if not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.wsun.tcc.core.annatation;
+package com.wsun.tcc.common.annatation;
 
-import com.wsun.tcc.core.enums.Propagation;
-import com.wsun.tcc.core.enums.TccPattern;
+import com.wsun.tcc.common.enums.Propagation;
+import com.wsun.tcc.common.enums.TccPattern;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -50,14 +50,17 @@ public @interface Tcc {
     String cancelMethod() default "";
 
     /**
-     * 模式 tcc 和cc模式
-     * <p>
      * tcc模式代表try中有数据库操作，try需要回滚
      * cc模式代表try中无数据库操作，try不需要回滚
      *
      * @return
      */
     TccPattern pattern() default TccPattern.TCC;
+
+
+    public boolean asyncConfirm() default false;
+
+    public boolean asyncCancel() default false;
 
 
 }

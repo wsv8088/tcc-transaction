@@ -15,7 +15,7 @@
  * along with this distribution; if not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.wsun.tcc.core.enums;
+package com.wsun.tcc.common.enums;
 
 
 import java.util.Arrays;

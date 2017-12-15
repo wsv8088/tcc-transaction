@@ -16,7 +16,7 @@
  *
  */
 
-package com.wsun.tcc.core.enums;
+package com.wsun.tcc.common.enums;
 
 /**
  * The enum Tcc pattern enum.
@@ -41,7 +41,7 @@ public enum TccPattern {
 
     private String desc;
 
-    TccPattern(Integer code, String desc) {
+    TccPattern(int code, String desc) {
         this.code = code;
         this.desc = desc;
     }
@@ -51,7 +51,7 @@ public enum TccPattern {
      *
      * @return the code
      */
-    public Integer getCode() {
+    public int getCode() {
         return code;
     }
 
@@ -60,7 +60,7 @@ public enum TccPattern {
      *
      * @param code the code
      */
-    public void setCode(Integer code) {
+    public void setCode(int code) {
         this.code = code;
     }
 

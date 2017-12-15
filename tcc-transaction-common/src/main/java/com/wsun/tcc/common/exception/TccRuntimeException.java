@@ -15,7 +15,7 @@
  * along with this distribution; if not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.wsun.tcc.core.exception;
+package com.wsun.tcc.common.exception;
 
 
 public class TccRuntimeException extends RuntimeException {

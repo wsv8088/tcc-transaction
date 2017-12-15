@@ -9,11 +9,16 @@
     <packaging>pom</packaging>
     <version>0.1-SNAPSHOT</version>
     <modules>
-        <module>tcc-transaction-core</module>
+        <module>tcc-transaction-common</module>
         <module>tcc-transaction-springcloud</module>
+        <module>tcc-transaction-core</module>
     </modules>
 
     <properties>
+        <spring.version>4.3.10.RELEASE</spring.version>
+        <apache.common.lang3.version>3.5</apache.common.lang3.version>
+
+        <aspectj.version>1.8.10</aspectj.version>
         <hession.version>4.0.38</hession.version>
         <log4j2.version>2.10.0</log4j2.version>
         <lombok.version>1.16.18</lombok.version>
@@ -26,6 +31,29 @@
 
     <dependencyManagement>
         <dependencies>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${apache.common.lang3.version}</version>
+            </dependency>
+
+
+            <!-- Spring Framework begin -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+
+            <!-- Spring Framework end -->
+
+            <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjweaver</artifactId>
+                <version>${aspectj.version}</version>
+            </dependency>
+
 
             <dependency>
                 <groupId>com.caucho</groupId>
